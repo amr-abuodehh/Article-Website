@@ -1,9 +1,14 @@
 
-
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+}
 .back{
     background-image: url(../images/img.png);
     background-repeat: no-repeat;
-    
+    background-size: 100%;
     position: relative;
     
     
@@ -130,6 +135,7 @@ a{
   .second{
     position: relative;
     display: flex;
+    flex-wrap: wrap;
   }
   .whitetext{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -156,8 +162,10 @@ a{
     font-family: 'Times New Roman', Times, serif;
     position: relative;
     padding-top: 70px;
-    padding-left: 200px;
-    
+    padding-left: 100px;
+    flex: 2;
+
+       
 
   }
   p:first-child::first-letter{
@@ -168,7 +176,7 @@ a{
   }
   .author{
     position: relative;
-
+    flex: 1;
   }
   .authors{
     padding: 15px;
